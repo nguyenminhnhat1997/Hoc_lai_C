@@ -47,4 +47,35 @@ char[] = "ok ok ok ok";
 
 - Nhập chuỗi sử dụng `gets` in rakis tự cho đến khi gặp kí tự xuống dòng.
 
-```javacrip
+```javacript
+  char note[100];
+  printf("Nhap vào kí tự ");
+  gets(note); -> Nhap vào 'abc de'
+  printf("%s",note); -> in ra 'abc de'
+```
+
+### 1 số hàm của thư viện <string.h>
+
+- Sao chép chuỗi với hàm `strcpy()`
+
+```javascript
+   char note[100], ok[100];
+  printf("Nhap vào kí tự ");
+  gets(note); -> Nhap vào 'abc de'
+  printf("%s",note); -> in ra 'abc de'
+  strcopy(ok,"Nguyen minh nhat");
+  printf("%s",ok); -> in ra 'Nguyễn Minh Nhật'
+```
+
+- Tạo bản sao của 1 chuỗi với hàm `strdup()`, tự tạo vùng nhớ chứa chuỗi s
+
+```javascript
+char *s;
+s = strdup("Nguyen Minh Nhat");
+printf("%s",s);z
+```
+
+
+
+
+
