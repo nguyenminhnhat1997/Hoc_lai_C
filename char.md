@@ -158,3 +158,5 @@ if(strstr(s1,s2))
 }else
 printf("khong tim thay");
 ```
+
+
