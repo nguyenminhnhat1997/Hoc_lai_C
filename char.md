@@ -72,10 +72,89 @@ char[] = "ok ok ok ok";
 ```javascript
 char *s;
 s = strdup("Nguyen Minh Nhat");
-printf("%s",s);z
+printf("%s",s);
+```
+- Chuyển chuỗi  hoa thành chuỗi thường với hàm `strlwr`
+
+```javascript
+char note[]="MINH NHAT";
+strlwr(note);
+puts(note); -> in ra minh nhat.
+
 ```
 
+- Chuyển chuỗi thường thành chuỗi hoa.
+
+```javascript
+char note[];
+strupr(note);
+puts(note);
+```
+
+- Đảo ngược thứ tự các kí tự trong chuỗi với hàm `strrev`.
+
+```javascript
+char note[] = "abc";
+strrev(note);
+puts(note);
+```
+
+- So sánh 2 chuỗi với hàm với hàm `strcmp(tr1,str2)`.
+
+  -- trả về 0 nếu s1 = s2.
+
+  -- trả về 1 nếu s1 > s2.
+
+  -- trả về -1 nếu s1 < s2.
 
 
+```javascript
+char s1[] = "ABC";
+char s2[] = "abc";
+int kq = strcmp(s1,s2);
+printf("%d",kq); -> trả -1
+```
+
+- So sánh 2 chuỗi không phân biệt hoa thường với hàm `stricmp`
 
 
+```javascript
+char s1[] = "ABC";
+char s2[] = "abc";
+int kq = strcmp(s1,s2);
+printf("%d",kq); -> trả 0
+```
+
+- Nối chuỗi vs hàm `strcat(s1,s2)`.
+
+```javascript
+char s1[] = "ABC";
+char s2[] = "abc";
+char *s3;
+s3 = strcat(s1,s2);
+puts(s3);
+```
+
+- Tính độ dài của chuỗi với hàm `strlen()`.
+
+```javascript
+  char s1[] = "abc";
+  int len = strlen(s1);
+  printf("%d",len);
+```
+
+- Tìm vị trí xuất hiện đầu tiên của s1  trong s2 với hàm strstr(s1,s2) .
+
+  -- trả về con trỏ đến đến vị trí xuất hiện đầu tiên của s2
+  
+  -- trả về null nếu không tìm thấy.
+  
+```javascript
+char s1[] = "abc";
+char s2[] = "a";
+if(strstr(s1,s2))
+{
+  printf("Tim thay"); -> in ra tìm thấy
+}else
+printf("khong tim thay");
+```
